@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_Name">AlertaBlu</string>
+    <string name="Actual_Situation">Situação Atual</string>
+    <string name="Nivel_Rio">Nível do Rio</string>
+    <string name="Deslizamento_Chuva">Deslizamento e Chuva</string>
+    <string name="Previsao_tempo">Previsão do tempo</string>
+    <string name="Avisos_Alertas">Avisos e Alertas</string>
+    <string name="Mapa_Estacoes">Mapa das Estações</string>
+    <string name="Mais_Opcoes">Mais Opções</string>
+    <string name="Data_hora">25/10/2023 14:00</string>
+    <string name="diference">Diferença (m)</string>
+    <string name="diferenceValue">0,00</string>
+    <string name="nivel">Nível (m)</string>
+    <string name="nivelValue">0,00</string>
+    <string name="variation">Variação</string>
+    <string name="variationValue">Sem</string>
+    <string name="TesteI_inicial">Olá mundo</string>
+    <string name="Nivel_site">0,00m</string>
+    <string name="StatusSite">Subiu</string>
+    <string name="Diferenca">0,00m</string>
+    <string name="Temperature">Temperatura</string>
+    <string name="TemperatureValue">24,1ºC</string>
+    <string name="Previsao">Previsão</string>
+    <string name="StaticText">Previsão de Mínima: 18ºC e Máxima: 25ºC</string>
+    <string name="rain">Chuva</string>
+    <string name="Slider">Deslizamento</string>
+    <string name="rainStatus">Normalidade</string>
+    <string name="SliderStatus">Normalidade</string>
+    <string name="SAhora">14h</string>
+</resources>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#333333"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/Nivel_Rio"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMenu"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_menu_24"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/imageViewGrafic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/chart_24"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageViewShareRiver"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/imageViewGrafic"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/share_24"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageViewHelp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/ic_help_24"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:layout_editor_absoluteX="376dp" />
+
+
+    <TextView
+        android:id="@+id/textViewDataHora"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:text="@string/Data_hora"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDiference"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <TextView
+        android:id="@+id/textViewDiference"
+        android:layout_width="95dp"
+        android:layout_height="25sp"
+        android:text="@string/diference"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textViewDiferenceValue"
+        android:layout_width="40dp"
+        android:layout_height="25sp"
+        android:text="@string/diferenceValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiference"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <TextView
+        android:id="@+id/textViewNivel"
+        android:layout_width="70sp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/nivel"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelValue"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="@string/nivelValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/textViewVariation"
+        android:layout_width="62dp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/variation"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <TextView
+        android:id="@+id/textViewVariationValue"
+        android:layout_width="42dp"
+        android:layout_height="25sp"
+        android:text="@string/variationValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#681111"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="210dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDiferenceValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.58"
+        app:srcCompat="@drawable/ic_circle_outline_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewDataHora1"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:text="@string/Data_hora"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/textViewDiference1"
+        android:layout_width="95dp"
+        android:layout_height="25sp"
+        android:text="@string/diference"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/textViewDiferenceValue1"
+        android:layout_width="40dp"
+        android:layout_height="25sp"
+        android:text="@string/diferenceValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/textViewNivel1"
+        android:layout_width="70sp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/nivel"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelValue1"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="@string/nivelValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/textViewVariation1"
+        android:layout_width="62dp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/variation"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/textViewVariationValue1"
+        android:layout_width="42dp"
+        android:layout_height="25sp"
+        android:text="@string/variationValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#681111"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView1"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDiferenceValue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:srcCompat="@drawable/ic_circle_outline_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewDataHora2"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:text="@string/Data_hora"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/textViewDiference2"
+        android:layout_width="95dp"
+        android:layout_height="25sp"
+        android:text="@string/diference"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <TextView
+        android:id="@+id/textViewDiferenceValue2"
+        android:layout_width="40dp"
+        android:layout_height="25sp"
+        android:text="@string/diferenceValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/textViewNivel2"
+        android:layout_width="70sp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/nivel"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/textViewNivelValue2"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:text="@string/nivelValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <TextView
+        android:id="@+id/textViewVariation2"
+        android:layout_width="62dp"
+        android:layout_height="25sp"
+        android:orientation="horizontal"
+        android:text="@string/variation"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textViewVariationValue2"
+        android:layout_width="42dp"
+        android:layout_height="25sp"
+        android:text="@string/variationValue"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#681111"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDiferenceValue2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView1"
+        app:srcCompat="@drawable/ic_circle_outline_24"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
